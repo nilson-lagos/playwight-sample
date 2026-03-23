@@ -10,4 +10,9 @@ test.describe('New Overview', () => {
     await page.goto('/dashboard');
     await expect(page.locator('.stats-panel')).toBeVisible();
   });
+
+  test('shows new panel 2', async ({ page }) => {
+    await page.goto('/dashboard');
+    await expect(page.locator('.stats-panel')).toBeVisible();
+  });
 });
